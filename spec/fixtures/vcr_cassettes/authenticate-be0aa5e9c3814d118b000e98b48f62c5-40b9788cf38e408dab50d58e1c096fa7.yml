@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://captcha.yunpian.com/v1/api/authenticate
+    body:
+      encoding: US-ASCII
+      string: captchaId=450c5c58b47f423d9eb0d2412760d20e&token=be0aa5e9c3814d118b000e98b48f62c5&authenticate=40b9788cf38e408dab50d58e1c096fa7&secretId=18e4fb526c604adbbd56df343d84f4ec&version=1.0&timestamp=1574262708000&nonce=83210&signature=62efba21c3a388aa6fe39abd49cfef2a
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - captcha.yunpian.com
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 20 Nov 2019 15:51:57 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"cb":null,"msg":"ok","data":null}'
+    http_version: 
+  recorded_at: Wed, 20 Nov 2019 15:11:48 GMT
+recorded_with: VCR 5.0.0
